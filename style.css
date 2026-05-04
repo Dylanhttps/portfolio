@@ -84,3 +84,14 @@ footer {
 .contact-section a:hover {
     color: #ff0000;
 }
+
+.cert-img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px; /* Baguhin ang number na ito para sa laki na gusto mo */
+    height: auto;
+    border: 2px solid #990000;
+    border-radius: 8px; /* Square edges na may kaunting kanto lang */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
