@@ -92,6 +92,7 @@ footer {
     margin: auto;
 }
 
+
 .cert-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -100,9 +101,10 @@ footer {
     margin-top: 40px;
 }
 
+
 .cert-frame {
-    width: 180px;
-    padding: 20px;
+    width: 280px; 
+    padding: 15px;
     border: 3px solid #ff0000;
     border-radius: 20px;
     background: rgba(255, 0, 0, 0.05);
@@ -118,24 +120,22 @@ footer {
 
 .cert-card-inner h3 {
     color: #ff0000;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
+
 .cert-img-simple {
-    width: 100px;
-    height: 100px;
+    width: 100%;       
+    max-width: 240px;
+    height: auto;      
     object-fit: contain;
 
-    border: 3px solid #ff0000;
-    border-radius: 15px;
-
-    padding: 10px;
-    background: #111111;
-
+    
+    border-radius: 10px;
     transition: 0.3s ease;
 }
 
 .cert-img-simple:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    transform: scale(1.05);
 }
