@@ -26,7 +26,8 @@
             
             <div class="cert-frame">
                 <div class="cert-card-inner">
-                    <a href="images/python_cert.png" target="_blank">
+                    <!-- Changed href to an onclick function -->
+                    <a href="javascript:void(0);" onclick="openModal('images/python_cert.png')">
                         <img src="images/python_cert.png" alt="Python Essentials 1" class="cert-img-simple">
                     </a>
                     <p style="margin-top: 10px; font-size: 0.8rem;">Python Essentials 1</p>
@@ -35,7 +36,8 @@
 
             <div class="cert-frame">
                 <div class="cert-card-inner">
-                    <a href="images/mycertificate1.png" target="_blank">
+                    <!-- Changed href to an onclick function -->
+                    <a href="javascript:void(0);" onclick="openModal('images/mycertificate1.png')">
                         <img src="images/mycertificate1.png" alt="Software Engineering 1" class="cert-img-simple">
                     </a>
                     <p style="margin-top: 10px; font-size: 0.8rem;">Software Engineering</p>
@@ -44,6 +46,27 @@
 
         </div> 
     </div> 
+
+    <!-- Lightbox Modal Overlay Structure -->
+    <div id="certModal" class="modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modalImg" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- Lightbox Logic Scripts -->
+    <script>
+        function openModal(imageSrc) {
+            var modal = document.getElementById("certModal");
+            var modalImg = document.getElementById("modalImg");
+            modal.style.display = "flex";
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("certModal");
+            modal.style.display = "none";
+        }
+    </script>
 
 </body>
 </html>
